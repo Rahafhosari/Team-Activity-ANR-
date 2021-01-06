@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset>
+    <table>
+        <legend>Submitted Information</legend>
+        <tbody>
+        <tr>
+            <td>Name:</td>
+            <td> </td><c:out value="${name}"/></td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>{{location}}</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>{{gender}}</td>
+        </tr>
+        <tr>
+            <td>Favourtie Langauge:</td>
+            <td>{{coding_language}}</td>
+        </tr>
+        <tr>
+            <td>Comment:</td>
+            <td>{{text_area}}</td>
+        </tr>
+        <tr>
+            <td>How did you find us?</td>
+            <td>{{find_us}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <form action="/goback" method="post">
+        <input type="submit" value="Go BACK">
+    </form>
+</fieldset>
+
+</body>
+</html>
